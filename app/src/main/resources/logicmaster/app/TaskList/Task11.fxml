@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="981.0" spacing="10.0" style="-fx-background-color: #102d66;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="logicmaster.app.TaskList.Task11Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Добро пожаловать в игру 'Предполагаемые системы'!" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="36.0" />
+        </font>
+    </Label>
+
+    <Label text="Система сгенерировала следующий вектор функции:" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="24.0" />
+        </font>
+    </Label>
+
+    <Label fx:id="systemVectorsLabel" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="24.0" />
+        </font>
+    </Label>
+
+    <Label text="Введите номера предполагаемых систем через пробел (или прочерк '-' если не принадлежит)" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Label>
+
+    <TextField fx:id="userAnswerInput" alignment="CENTER" maxWidth="-Infinity" prefHeight="40.0" prefWidth="800.0" promptText="Введите ответ">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </TextField>
+
+    <Label fx:id="resultLabel" text="" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="24.0" />
+        </font>
+    </Label>
+
+    <Button onAction="#checkAnswer" text="Проверить ответ">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Button>
+    <Button onAction="#resetGame" text="Сбросить">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Button>
+    <Button onAction="#handleBackButtonClick" text="Назад">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font></Button>
+</VBox>

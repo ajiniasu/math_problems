@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #102d66;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logicmaster.app.TaskList.Task1Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Задача 1" textFill="WHITE">
+      <font>
+         <Font name="Open Sans Regular" size="36.0" />
+      </font></Label>
+   <Label text="1. На вход — число n, на выход — булева функция от n аргументов." textFill="WHITE">
+      <font>
+         <Font name="Open Sans Regular" size="18.0" />
+      </font>
+   </Label>
+    <TextField fx:id="argumentField" alignment="TOP_CENTER" maxWidth="1000.0" prefWidth="560.0" promptText="Введите n">
+      <font>
+         <Font size="18.0" />
+      </font></TextField>
+
+    <!-- Кнопка для генерации булевой функции -->
+    <Button onAction="#handleGenerateFunctionButtonClick" text="Сгенерировать функцию">
+      <font>
+         <Font name="Open Sans Regular" size="18.0" />
+      </font></Button>
+
+    <!-- Текстовое поле для вывода результата -->
+    <Label fx:id="resultLabel" alignment="CENTER" prefHeight="40.0" prefWidth="560.0" text="" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Open Sans Regular" size="24.0" />
+      </font></Label>
+
+    <!-- Кнопка "Назад" -->
+    <Button onAction="#handleBackButtonClick" text="Назад">
+      <font>
+         <Font name="Open Sans Regular" size="18.0" />
+      </font></Button>
+</VBox>

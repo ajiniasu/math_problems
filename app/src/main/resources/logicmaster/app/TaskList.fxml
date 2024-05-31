@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="923.0" prefWidth="1292.0" spacing="20.0" style="-fx-background-color: #102d66;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logicmaster.app.TaskListController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Список задач" textFill="WHITE">
+      <font>
+         <Font name="Open Sans Regular" size="48.0" />
+      </font></Label>
+    <Button onAction="#handleTask1ButtonClick" text="Задача 1">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask2ButtonClick" text="Задача 2">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask3ButtonClick" text="Задача 3">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask4ButtonClick" text="Задача 4">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask5ButtonClick" text="Задача 5" textAlignment="CENTER">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask6ButtonClick" text="Задача 6">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask7ButtonClick" text="Задача 7">
+      <font>
+         <Font size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask8ButtonClick" text="Задача 8">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask9ButtonClick" text="Задача 9">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask10ButtonClick" text="Задача 10">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask11ButtonClick" text="Задача 11">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleTask12ButtonClick" text="Задача 12">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+
+    <Button fx:id="backButton" onAction="#handleBackButtonClick" text="Назад">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+    <Button onAction="#handleToggleFullscreen" text="Переключить режим экрана">
+      <font>
+         <Font name="Open Sans Regular" size="20.0" />
+      </font></Button>
+</VBox>

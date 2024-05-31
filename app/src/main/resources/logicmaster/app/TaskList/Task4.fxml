@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #102d66;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logicmaster.app.TaskList.Task4Controller">
+    <Label text="ИГРА: Угадать функцию по ее вектору" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="36.0" />
+        </font>
+    </Label>
+    <Label fx:id="functionVectorLabel" alignment="CENTER" prefHeight="40.0" prefWidth="760.0" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="24.0" />
+        </font>
+    </Label>
+    <VBox fx:id="optionsContainer" alignment="CENTER" prefHeight="60.0" prefWidth="983.0" spacing="5.0" />
+    <Label fx:id="resultLabel" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Label>
+    <Button fx:id="resetButton" disable="true" onAction="#handleReset" text="Сброс">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Button>
+    <Button onAction="#handleBackButtonClick" text="Назад">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Button>
+</VBox>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="987.0" spacing="10" style="-fx-background-color: #102d66;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logicmaster.app.TaskList.Task5Controller">
+    <Label text="Добро пожаловать в игру &quot;выбор существенных переменных&quot;" textFill="WHITE">
+      <font>
+         <Font size="30.0" />
+      </font></Label>
+    <Label fx:id="functionVectorLabel" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+    <CheckBox fx:id="variable1Checkbox" text="Первая переменная" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font></CheckBox>
+    <CheckBox fx:id="variable2Checkbox" text="Вторая переменная" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font></CheckBox>
+    <Button fx:id="submitButton" onAction="#handleSubmit" text="Подтвердить">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+    <Button fx:id="resetButton" onAction="#handleReset" text="Сбросить">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+    <Label fx:id="resultLabel" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+    <Button onAction="#handleBackButtonClick" text="Назад">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+</VBox>

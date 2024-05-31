@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="679.0" prefWidth="981.0" spacing="10.0" style="-fx-background-color: #102d66;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="logicmaster.app.TaskList.Task12Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="promptLabel" text="Введите количество переменных:" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="36.0" />
+        </font>
+    </Label>
+
+    <TextField fx:id="variablesField" alignment="CENTER" maxWidth="-Infinity" prefHeight="40.0" prefWidth="800.0" promptText="Введите переменные">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </TextField>
+
+    <Label fx:id="promptRowsLabel" text="Введите количество строк в таблице истинности:" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Label>
+
+    <TextField fx:id="rowsField" alignment="CENTER" maxWidth="-Infinity" prefHeight="40.0" prefWidth="800.0" promptText="Введите количество строк">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </TextField>
+
+    <VBox fx:id="inputFields" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="10.0" />
+
+    <Button onAction="#handleSubmit" text="Подтвердить">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Button>
+
+    <Button onAction="#handleDNF" text="Построить ДНФ">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Button>
+
+    <Label fx:id="resultLabel" textFill="WHITE">
+        <font>
+            <Font name="Open Sans Regular" size="24.0" />
+        </font>
+    </Label>
+
+    <Button onAction="#handleBackButtonClick" text="Назад">
+        <font>
+            <Font name="Open Sans Regular" size="18.0" />
+        </font>
+    </Button>
+</VBox>
